@@ -1,0 +1,44 @@
+.description {
+  .header {
+    &__title {
+      color: $darkMagenta;
+      font-weight: $font-bold;
+      font-size: to-em(37);
+    }
+
+    &__text {
+      font-size: $font-normal;
+      color: $darkGrayishMagenta;
+      font-weight: $font-regular;
+    }
+  }
+
+  .review {
+    margin: to-em(40) auto;
+    &__item {
+      background-color: $lightGrayishMagenta;
+      margin: to-em(16) auto;
+      padding: to-em(14);
+      border-radius: to-em(10);
+      font-size: $font-normal;
+      font-weight: $font-bold;
+      color: #502050;
+
+      span {
+        display: block;
+      }
+    }
+
+    &__stars {
+      margin-bottom: to-em(14);
+      img {
+        vertical-align: middle;
+        object-fit: cover;
+
+        &:not(:last-child) {
+          margin-right: to-em(8);
+        }
+      }
+    }
+  }
+}
