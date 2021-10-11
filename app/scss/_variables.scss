@@ -12,8 +12,9 @@ $white: hsl(0, 0%, 100%);
 
 // Typography
 // Font Size
-
+$font-small: to-rem(13);
 $font-normal: to-rem(15);
+$font-large: to-rem(32);
 
 // Font Weight
 $font-light: 400;

@@ -56,7 +56,7 @@ p {
 
 .attribution {
   padding: 0 to-rem(24);
-  font-size: 11px;
+  font-size: to-rem(11);
   text-align: center;
   color: $darkMagenta;
 }

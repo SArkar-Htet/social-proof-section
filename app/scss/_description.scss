@@ -10,7 +10,7 @@
 
   .header {
     flex: 100%;
-    max-width: 455px;
+    max-width: to-rem(455);
     @include breakpoint-up(large) {
       flex: 40%;
     }
@@ -18,7 +18,7 @@
     &__title {
       color: $darkMagenta;
       font-weight: $font-bold;
-      font-size: to-rem(32);
+      font-size: $font-large;
       line-height: 1;
       margin-bottom: to-rem(23);
 
@@ -40,7 +40,7 @@
 
   .review {
     flex: 100%;
-    max-width: 540px;
+    max-width: to-rem(540);
     
     @include breakpoint-down(medium) {
       margin: to-rem(32) auto;
@@ -55,7 +55,7 @@
       align-items: center;
       justify-content: space-around;
       flex-direction: column;
-      max-width: 445px;
+      max-width: to-rem(445);
       background-color: $lightGrayishMagenta;
       margin: to-rem(18) auto;
       padding: to-rem(20) to-rem(14);

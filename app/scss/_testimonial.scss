@@ -53,7 +53,7 @@
     }
 
     &__text {
-      font-size: to-rem(13);
+      font-size: $font-small;
       font-weight: $font-regular;
       padding-top: to-rem(29);
       line-height: 1.8;
