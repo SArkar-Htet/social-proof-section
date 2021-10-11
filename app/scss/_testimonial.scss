@@ -1,0 +1,45 @@
+.testimonial {
+  display: flex;
+  flex-wrap: wrap;
+
+  .card {
+    flex: 100%;
+    background-color: $darkMagenta;
+    padding: 40px 32px;
+    color: $white;
+    font-size: $font-normal;
+    border-radius: to-em(10);
+    margin: to-em(8) auto;
+
+    &__user__infos {
+      display: flex;
+      align-items: center;
+    }
+
+    &__user__avatar {
+      width: 40px;
+      border-radius: 50px;
+      margin-right: 22px;
+    }
+
+    &__user__details {
+      span {
+        display: block;
+        line-height: 1.5;
+      }
+    }
+
+    &__user__name {
+      font-weight: $font-bold;
+    }
+
+    &__user__position {
+      color: $softPink;
+    }
+
+    &__text {
+      font-size: to-em(13);
+      font-weight: $font-regular;
+    }
+  }
+}
