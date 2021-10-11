@@ -5,7 +5,7 @@
   .card {
     flex: 100%;
     background-color: $darkMagenta;
-    padding: 40px 32px;
+    padding: to-em(40) to-em(32);
     color: $white;
     font-size: $font-normal;
     border-radius: to-em(10);
@@ -17,9 +17,9 @@
     }
 
     &__user__avatar {
-      width: 40px;
-      border-radius: 50px;
-      margin-right: 22px;
+      width: to-em(42);
+      border-radius: to-em(50);
+      margin-right: to-em(22);
     }
 
     &__user__details {
@@ -40,6 +40,8 @@
     &__text {
       font-size: to-em(13);
       font-weight: $font-regular;
+      padding-top: to-em(29);
+      line-height: 1.8;
     }
   }
 }
