@@ -24,6 +24,7 @@
 
       @include breakpoint-up(large) {
         font-size: to-em(55);
+        margin: 0 auto;
       }
     }
 

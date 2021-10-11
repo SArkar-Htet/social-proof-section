@@ -1,15 +1,29 @@
 .testimonial {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  align-items: flex-start;
+  gap: to-em(16);
+
+  @include breakpoint-up(large) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: to-em(30);
+    padding-top: to-em(70);
+  }
 
   .card {
-    flex: 100%;
     background-color: $darkMagenta;
     padding: to-em(40) to-em(32);
     color: $white;
     font-size: $font-normal;
     border-radius: to-em(10);
-    margin: to-em(8) auto;
+
+    &:nth-child(2) {
+      margin-top: to-em(16);
+    }
+
+    &:last-child {
+      margin-top: to-em(32);
+    }
+
 
     &__user__infos {
       display: flex;
