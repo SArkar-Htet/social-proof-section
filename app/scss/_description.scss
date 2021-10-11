@@ -12,7 +12,7 @@
     flex: 100%;
     max-width: 455px;
     @include breakpoint-up(large) {
-      flex: 50%;
+      flex: 40%;
     }
 
     &__title {
@@ -22,7 +22,11 @@
       line-height: 1;
       margin-bottom: to-rem(23);
 
-      @include breakpoint-up(large) {
+      @include breakpoint-up(medium) {
+        font-size: to-rem(48);
+      }
+
+      @include breakpoint-up(xLarge) {
         font-size: to-rem(55);
       }
     }
@@ -43,7 +47,7 @@
     }
 
     @include breakpoint-up(large) {
-      flex: 50%;
+      flex: 60%;
     }
 
     &__item {
@@ -64,10 +68,19 @@
         flex-direction: row;
         margin: to-rem(18) 0 to-rem(18) auto;
         &:first-child {
-          margin-right: 90px;
+          margin-right: to-rem(64);
         }
         &:nth-child(2) {
-          margin-right: 45px;
+          margin-right: to-rem(32);
+        }
+      }
+
+      @include breakpoint-up(xLarge) {
+        &:first-child {
+          margin-right: to-rem(90);
+        }
+        &:nth-child(2) {
+          margin-right: to-rem(45);
         }
       }
 

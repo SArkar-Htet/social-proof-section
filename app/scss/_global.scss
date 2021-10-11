@@ -14,17 +14,29 @@ body {
   background-image: url(../../images/bg-pattern-top-mobile.svg), url(../../images/bg-pattern-bottom-mobile.svg);
   background-repeat: no-repeat no-repeat;
   background-position: left top, right bottom;
-  // background-size: 100%, 100%;
 
-  @include breakpoint-up(large) {
+  @include breakpoint-down(small) {
+    background-size: contain, contain;
+  }
+
+  @include breakpoint-up(medium) {
     background-image: url(../../images/bg-pattern-top-desktop.svg), url(../../images/bg-pattern-bottom-desktop.svg);
   }
 }
 
 .container {
-  padding: to-rem(72) to-rem(24);
+  padding: to-rem(98) to-rem(24);
+
+  @include breakpoint-down(medium) {
+    max-width: to-rem(445);
+    margin: 0 auto;
+  }
 
   @include breakpoint-up(large) {
+    padding: to-rem(60);
+  }
+
+  @include breakpoint-up(xLarge) {
     padding: to-rem(98) to-rem(120);
   }
 }
