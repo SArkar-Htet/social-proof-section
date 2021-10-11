@@ -41,3 +41,14 @@ h1, p {
 p {
   line-height: 1.5;
 }
+
+.attribution {
+  padding: 0 to-rem(24);
+  font-size: 11px;
+  text-align: center;
+  color: $darkMagenta;
+}
+.attribution a {
+  color: $darkMagenta;
+  font-weight: $font-bold;
+}
