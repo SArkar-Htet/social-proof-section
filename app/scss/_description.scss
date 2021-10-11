@@ -18,12 +18,12 @@
     &__title {
       color: $darkMagenta;
       font-weight: $font-bold;
-      font-size: to-em(32);
+      font-size: to-rem(32);
       line-height: 1;
-      margin-bottom: to-em(23);
+      margin-bottom: to-rem(23);
 
       @include breakpoint-up(large) {
-        font-size: to-em(55);
+        font-size: to-rem(55);
         margin: 0 auto;
       }
     }
@@ -40,7 +40,7 @@
     max-width: 540px;
     
     @include breakpoint-down(medium) {
-      margin: to-em(32) auto;
+      margin: to-rem(32) auto;
     }
 
     @include breakpoint-up(large) {
@@ -54,16 +54,16 @@
       flex-direction: column;
       max-width: 445px;
       background-color: $lightGrayishMagenta;
-      margin: to-em(18) auto;
-      padding: to-em(20) to-em(14);
-      border-radius: to-em(10);
+      margin: to-rem(18) auto;
+      padding: to-rem(20) to-rem(14);
+      border-radius: to-rem(10);
       font-size: $font-normal;
       font-weight: $font-bold;
       color: #502050;
 
       @include breakpoint-up(large) {
         flex-direction: row;
-        margin: to-em(18) 0 to-em(18) auto;
+        margin: to-rem(18) 0 to-rem(18) auto;
         &:first-child {
           margin-right: 90px;
         }
@@ -78,7 +78,7 @@
     }
 
     &__stars {
-      margin-bottom: to-em(14);
+      margin-bottom: to-rem(14);
 
       @include breakpoint-up(large) {
         margin: 0;
@@ -89,7 +89,7 @@
         object-fit: cover;
 
         &:not(:last-child) {
-          margin-right: to-em(8);
+          margin-right: to-rem(8);
         }
       }
     }

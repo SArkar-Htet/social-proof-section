@@ -22,10 +22,10 @@ body {
 }
 
 .container {
-  padding: to-em(72) to-em(24);
+  padding: to-rem(72) to-rem(24);
 
   @include breakpoint-up(large) {
-    padding: to-em(98) to-em(120);
+    padding: to-rem(98) to-rem(120);
   }
 }
 

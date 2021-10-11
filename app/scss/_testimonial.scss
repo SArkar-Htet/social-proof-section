@@ -1,27 +1,27 @@
 .testimonial {
   display: grid;
   align-items: flex-start;
-  gap: to-em(16);
+  gap: to-rem(16);
 
   @include breakpoint-up(large) {
     grid-template-columns: repeat(3, 1fr);
-    gap: to-em(30);
-    padding-top: to-em(70);
+    gap: to-rem(30);
+    padding-top: to-rem(70);
   }
 
   .card {
     background-color: $darkMagenta;
-    padding: to-em(40) to-em(32);
+    padding: to-rem(40) to-rem(32);
     color: $white;
     font-size: $font-normal;
-    border-radius: to-em(10);
+    border-radius: to-rem(10);
 
     &:nth-child(2) {
-      margin-top: to-em(16);
+      margin-top: to-rem(16);
     }
 
     &:last-child {
-      margin-top: to-em(32);
+      margin-top: to-rem(32);
     }
 
 
@@ -31,9 +31,9 @@
     }
 
     &__user__avatar {
-      width: to-em(42);
-      border-radius: to-em(50);
-      margin-right: to-em(22);
+      width: to-rem(42);
+      border-radius: to-rem(50);
+      margin-right: to-rem(22);
     }
 
     &__user__details {
@@ -52,9 +52,9 @@
     }
 
     &__text {
-      font-size: to-em(13);
+      font-size: to-rem(13);
       font-weight: $font-regular;
-      padding-top: to-em(29);
+      padding-top: to-rem(29);
       line-height: 1.8;
     }
   }
