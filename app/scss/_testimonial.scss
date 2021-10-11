@@ -16,14 +16,15 @@
     font-size: $font-normal;
     border-radius: to-rem(10);
 
-    &:nth-child(2) {
-      margin-top: to-rem(16);
+    @include breakpoint-up(large) {
+      &:nth-child(2) {
+        margin-top: to-rem(16);
+      }
+  
+      &:last-child {
+        margin-top: to-rem(32);
+      }
     }
-
-    &:last-child {
-      margin-top: to-rem(32);
-    }
-
 
     &__user__infos {
       display: flex;
