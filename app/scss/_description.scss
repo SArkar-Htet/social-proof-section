@@ -40,7 +40,7 @@
     max-width: 540px;
     
     @include breakpoint-down(medium) {
-      margin: to-em(40) auto;
+      margin: to-em(32) auto;
     }
 
     @include breakpoint-up(large) {
@@ -51,9 +51,10 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
+      flex-direction: column;
       max-width: 445px;
       background-color: $lightGrayishMagenta;
-      margin: to-em(16) auto;
+      margin: to-em(18) auto;
       padding: to-em(20) to-em(14);
       border-radius: to-em(10);
       font-size: $font-normal;
@@ -61,6 +62,7 @@
       color: #502050;
 
       @include breakpoint-up(large) {
+        flex-direction: row;
         margin: to-em(18) 0 to-em(18) auto;
         &:first-child {
           margin-right: 90px;
