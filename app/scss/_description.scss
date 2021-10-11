@@ -1,9 +1,31 @@
 .description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  @include breakpoint-up(large) {
+    text-align: left;
+  }
+
   .header {
+    flex: 100%;
+    max-width: 455px;
+    @include breakpoint-up(large) {
+      flex: 50%;
+    }
+
     &__title {
       color: $darkMagenta;
       font-weight: $font-bold;
       font-size: to-em(37);
+
+      @include breakpoint-up(large) {
+        margin: 0;
+        padding: 0;
+        font-size: to-em(55);
+        line-height: 1;
+      }
     }
 
     &__text {
@@ -14,15 +36,39 @@
   }
 
   .review {
-    margin: to-em(40) auto;
+    flex: 100%;
+    max-width: 540px;
+    
+    @include breakpoint-down(medium) {
+      margin: to-em(40) auto;
+    }
+
+    @include breakpoint-up(large) {
+      flex: 50%;
+    }
+
     &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      max-width: 445px;
       background-color: $lightGrayishMagenta;
       margin: to-em(16) auto;
-      padding: to-em(14);
+      padding: to-em(20) to-em(14);
       border-radius: to-em(10);
       font-size: $font-normal;
       font-weight: $font-bold;
       color: #502050;
+
+      @include breakpoint-up(large) {
+        margin: to-em(18) 0 to-em(18) auto;
+        &:first-child {
+          margin-right: 90px;
+        }
+        &:nth-child(2) {
+          margin-right: 45px;
+        }
+      }
 
       span {
         display: block;
@@ -31,6 +77,11 @@
 
     &__stars {
       margin-bottom: to-em(14);
+
+      @include breakpoint-up(large) {
+        margin: 0;
+      }
+
       img {
         vertical-align: middle;
         object-fit: cover;
