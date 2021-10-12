@@ -38,13 +38,11 @@
     }
 
     &__user__details {
-      span {
-        display: block;
-        line-height: 1.5;
-      }
+      line-height: 1.5;
     }
 
     &__user__name {
+      font-size: $font-normal;
       font-weight: $font-bold;
     }
 
